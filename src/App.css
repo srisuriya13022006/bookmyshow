@@ -1,4 +1,4 @@
-#root {
+/* #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
@@ -39,4 +39,41 @@
 
 .read-the-docs {
   color: #888;
+} */
+/* 1. Global Reset & Brand Foundation */
+/* Update these specific blocks in your App.css */
+/* Reset browser defaults to 0 */
+#root {
+  /* Force full viewport coverage */
+  width: 100vw;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  
+  /* Background should be consistent */
+  background-color: #0f172a;
+
+  /* Perfect Centering for your Login/Home cards */
+  display: flex;
+  flex-direction: column;
+  align-items: center;    
+  justify-content: center; 
+  
+  /* Overrides all boilerplate constraints */
+  max-width: none !important; 
+}
+
+/* Page entrance animation */
+.page-fade-in {
+  animation: fadeIn 0.4s ease-out;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
 }
